@@ -16,7 +16,7 @@ public class SumOfArray {
 		return Arrays.stream(ar).sum();
 	}
 	
-	public int testSimpleArraySumForLoop(int[] arr) {
+	public int simpleArraySumForLoop(int[] arr) {
 		int sum=0;
 		for(int a:arr) {
 			sum+=a;

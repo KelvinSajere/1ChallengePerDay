@@ -15,7 +15,7 @@ class SumOfArrayTest {
 	
 	@Test
 	void testSimpleArraySumForLoop() {
-		assertEquals(5, new SumOfArray().testSimpleArraySumForLoop(new int[] {2,3}));
+		assertEquals(5, new SumOfArray().simpleArraySumForLoop(new int[] {2,3}));
 	}
 
 }
