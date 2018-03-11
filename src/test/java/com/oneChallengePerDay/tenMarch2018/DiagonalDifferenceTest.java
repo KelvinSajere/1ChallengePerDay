@@ -12,6 +12,13 @@ class DiagonalDifferenceTest {
 	void testDiaDiff() {
 		DiagonalDifference sumDiff = new DiagonalDifference();
 		int[][] array= { { 11, 2, 4 }, { 4, 5, 6 }, { 10, 8, -12 } };
+		assertEquals(15, sumDiff.diaDiff(array));
+	}
+	
+	@Test
+	void testDiaDiff2() {
+		DiagonalDifference sumDiff = new DiagonalDifference();
+		int[][] array= { { 11, 2, 4 }, { 4, 5, 6 }, { 10, 8, -12 } };
 		assertEquals(15, sumDiff.diaDiff2(array));
 	}
 
