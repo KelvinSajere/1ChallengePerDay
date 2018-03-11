@@ -26,7 +26,7 @@ public class DiagonalDifference {
 
 	public int diaDiff2(int[][] a) {
 		/*
-		 * Loop from 0-3 Map the index values Reduce the sum starting from 0/c and
+		 * Loop from 0-array length Map the index values Reduce the sum starting from 0/c and
 		 * increase to e
 		 */
 		return Math.abs(IntStream.range(0, a.length).mapToObj(i -> a[i][i] - a[i][a.length - 1 - i]).reduce(0,
