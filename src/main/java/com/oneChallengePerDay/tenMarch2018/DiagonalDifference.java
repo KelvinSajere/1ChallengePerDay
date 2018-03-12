@@ -3,6 +3,7 @@
  */
 package com.oneChallengePerDay.tenMarch2018;
 
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 /**
@@ -29,6 +30,7 @@ public class DiagonalDifference {
 		 * Loop from 0-array length Map the index values Reduce the sum starting from 0/c and
 		 * increase to e
 		 */
+		
 		return Math.abs(IntStream.range(0, a.length).mapToObj(i -> a[i][i] - a[i][a.length - 1 - i]).reduce(0,
 				(c, e) -> c + e));
 	}
